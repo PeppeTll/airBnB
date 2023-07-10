@@ -1,8 +1,17 @@
+//style
+import styles from "./App.module.scss";
+
 import { useState } from "react";
-import "./App.css";
+
+//Components
+import Header from "./Components/Header";
 
 function App() {
-	return <></>;
+	return (
+		<div className={styles.App}>
+			<Header />
+		</div>
+	);
 }
 
 export default App;
