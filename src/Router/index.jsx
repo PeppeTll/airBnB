@@ -2,6 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 
 //Components
 import App from "../App.jsx";
+import Location from "../Page/Location/Location.jsx";
 
 const router = createBrowserRouter([
 	{
@@ -10,7 +11,7 @@ const router = createBrowserRouter([
 		children: [
 			{
 				path: "/location",
-				element: <h1>holasaaaaaaaaaaaaaaaaaaaaaaaaaaa</h1>,
+				element: <Location />,
 			},
 			{
 				path: "/location/:id",
