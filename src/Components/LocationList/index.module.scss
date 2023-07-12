@@ -6,8 +6,8 @@
   &__wrapList {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
-    gap: 15px;
+    gap: 20px;
   }
 }

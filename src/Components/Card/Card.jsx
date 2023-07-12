@@ -1,8 +1,13 @@
+import { useNavigate } from "react-router-dom";
 import styles from "./index.module.scss";
 
 const Card = ({ data }) => {
+	const navigate = useNavigate();
+
+	const onHandleLocation = () => navigate(`/${data.id}`);
+
 	return (
-		<div className={styles.Card}>
+		<div className={styles.Card} onClick={onHandleLocation}>
 			<img src={data.thumbnail} alt={data.title} className={styles.Card__img} />
 			<div className={styles.Card__info}>
 				<div className={styles.Card__info__title}>

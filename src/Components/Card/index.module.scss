@@ -1,6 +1,6 @@
 .Card {
   width: 400px;
-  height: 400px;
+  height: 450px;
 
   &__img {
     width: 100%;
@@ -15,7 +15,11 @@
     &__title {
       display: flex;
       justify-content: space-between;
-      align-items: center;
+      align-items: start;
+
+      &__p {
+        max-width: 80%;
+      }
     }
   }
 }
